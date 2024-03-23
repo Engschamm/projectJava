@@ -20,7 +20,7 @@ class SanPham {
         this.gia = gia;
         this.soLuong = soLuong;
     }
-
+    
     public String layTen() {
         return ten;
     }
@@ -93,16 +93,17 @@ class SanPham {
     }
 
     private static void hienThiMenu() {
-        System.out.println("======= MENU CÁC CHỨC NĂNG =======");
-        System.out.println("1. Nhập thông tin sản phẩm");
-        System.out.println("2. Tìm kiếm thông tin sản phẩm");
-        System.out.println("3. Xóa sản phẩm ra khỏi danh sách");
-        System.out.println("4. Sửa thông tin sản phẩm");
-        System.out.println("5. Sắp xếp sản phẩm theo giá");
-        System.out.println("6. Hiển thị danh sách các sản phẩm hiện có");
-        System.out.println("7. Thống kê số lượng và giá trị các sản phẩm");
-        System.out.println("8. Báo cáo tổng quan về sản phẩm");
-        System.out.println("9. Thoát chương trình");
+        System.out.println("|=============== MENU CÁC CHỨC NĂNG ===============|");
+        System.out.println("|1. Nhập thông tin sản phẩm                       ||");
+        System.out.println("|2. Tìm kiếm thông tin sản phẩm                   ||");
+        System.out.println("|3. Xóa sản phẩm ra khỏi danh sách                ||");
+        System.out.println("|4. Sửa thông tin sản phẩm                        ||");
+        System.out.println("|5. Sắp xếp sản phẩm theo giá                     ||");
+        System.out.println("|6. Hiển thị danh sách các sản phẩm hiện có       ||");
+        System.out.println("|7. Thống kê số lượng và giá trị các sản phẩm     ||");
+        System.out.println("|8. Báo cáo tổng quan về sản phẩm                 ||");
+        System.out.println("|9. Thoát chương trình                            ||");
+        System.out.println("|==================================================|");
     }
 
     private static void themSanPham() {
@@ -115,7 +116,7 @@ class SanPham {
         int soLuong = scanner.nextInt();
         danhSachSanPham.add(new SanPham(ten, gia, soLuong));
         System.out.println("Sản phẩm đã được thêm vào danh sách.");
-    }
+    } 
 
     private static void timKiemSanPham() {
         System.out.println("===== Tìm kiếm thông tin sản phẩm =====");
@@ -243,4 +244,6 @@ class SanPham {
         }
         System.out.println("Số lượng sản phẩm nhiều nhất: " + soLuongMax);
     }
+    
+
 }
